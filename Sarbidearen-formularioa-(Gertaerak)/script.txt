@@ -1,0 +1,30 @@
+const usuario = document.getElementById("usuario");
+const password = document.getElementById("password");
+const meterPassword = document.getElementById("meterPassword");
+
+usuario.addEventListener("blur", () => {
+	if (usuario.value.length < 7 || usuario.value.length > 15) {
+		alert("El usuario debe tener entre 7 y 15 caracteres.");
+	}
+});
+
+password.addEventListener("focus", () => {
+	password.value = "";
+});
+
+password.addEventListener("blur", () => {
+	const tieneLetra = /[a-z]/i.test(password.value);
+	const tieneNumero = /\d/.test(password.value);
+
+	if (!tieneLetra || !tieneNumero) {
+		alert("El password debe contener al menos una letra y un número.");
+	}
+});
+
+const temporizador = setTimeout(() => {
+	alert("¡Corre, mete ya el password!");
+}, 10000);
+
+meterPassword.addEventListener("click", () => {
+	clearTimeout(temporizador);
+});

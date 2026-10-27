@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktibitate Aplikazioa</title>
+
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="estiloak.css">
+
+    <!-- Archivos JS ordenados lógicamente -->
+    <script src="Ataza.js" defer></script>
+    <script src="AtazaKudeatzailea.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Nire Produktibitatea</h1>
+        <nav style="text-align: center; margin-bottom: 20px;">
+            <a href="kalkulagailua.html" style="text-decoration: none; color: #1976d2; font-weight: bold;">Ir a la Calculadora ➡</a>
+        </nav>
+
+        <div class="pomodoro">
+            <h2>Pomodoro Erlojua</h2>
+            <div id="timer">25:00</div>
+            <button id="btn-start">Hasi</button>
+            <button id="btn-reset">Berrabiarazi</button>
+        </div>
+
+        <h2>Atazen Zerrenda</h2>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Zer egin behar duzu gaur?" required>
+            <button type="submit">Gehitu</button>
+        </form>
+
+        <ul id="task-list" class="task-list"></ul>
+    </div>
+</body>
+</html>

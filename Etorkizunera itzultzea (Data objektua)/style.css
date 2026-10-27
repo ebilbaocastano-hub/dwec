@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Digital";
+  src: url("DS-DIGI.TTF"); /* https://www.dafont.com/es/ds-digital.font */
+}
+
+body {
+    background-image: url("metal.jpg");/* https://wall.alphacoders.com/big.php?i=369168&lang=Spanish */
+    align-content: center;
+}
+
+p {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+p#mensaje, p.etiqueta{
+    background-color: black;
+    color: white;
+}
+p.etiqueta {
+    display: inline-block;
+    padding: 10px 60px;
+}
+p#mensaje{
+    padding: 20px;
+}
+input {
+  font-family: "Digital", sans-serif;
+  font-size: 2em;
+  background-color: black;
+}
+.rojo { color: red}
+.verde { color: green}
+div.centro{
+    text-align: center;
+}
+        

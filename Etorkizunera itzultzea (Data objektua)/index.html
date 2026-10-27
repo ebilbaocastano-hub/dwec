@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Regreso al futuro</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js" defer></script>
+	</head>
+
+	<body>
+        <div class="centro">
+            <p class="etiqueta">PRESENT TIME</p><br/>
+            <p>
+            <input type="text" value="OCT" size="3" maxlength="3" class="verde" id="presenteMes"/>
+            <input type="number" value="26" size="2" min="1" max="31" class="verde" id="presenteDia"/>
+            <input type="number" value="1985" size="4" min="0" max="9999" class="verde" id="presenteAno"/>
+            <input type="number" value="01" size="2" min="0" max="23" class="verde" id="presenteHora"/>
+            <input type="number" value="21" size="2" min="0" max="59" class="verde" id="presenteMinuto"/>
+            </p><br/>
+            <p class="etiqueta">DESTINATION TIME</p><br/>
+            <p>
+            <input type="text" value="OCT" size="3" maxlength="3" class="rojo" id="destinoMes"/>
+            <input type="number" value="26" size="2"  min="1" max="31" class="rojo" id="destinoDia"/>
+            <input type="number" value="1985" size="4" min="0" max="9999" class="rojo" id="destinoAno"/>
+            <input type="number" value="01" size="2"  min="0" max="23" class="rojo" id="destinoHora"/>
+            <input type="number" value="21" size="2"  min="0" max="59" class="rojo" id="destinoMinuto"/>
+            </p><br/>
+            <button type="button" id="calcular">Calcular viaje</button>
+            <p id="mensaje"></p>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulagailua</title>
+    <link rel="stylesheet" href="estiloak.css">
+        <!-- Carga de los scripts en orden -->
+    <script src="Kalkulagailua.js" defer></script>
+    <script src="kalk_app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Navegación simple para volver a las tareas -->
+        <nav style="margin-bottom: 20px;">
+            <a href="index.html" style="text-decoration: none; color: #1976d2; font-weight: bold;">⬅ Itzuli Atazetara (Volver)</a>
+        </nav>
+
+        <h1>Kalkulagailua</h1>
+
+        <!-- SECCIÓN DOM (Módulo 5) -->
+        <div class="calculator">
+            <div class="pantaila" id="pantaila">0</div>
+            
+            <div class="teklatua">
+                <!-- Usamos data-ekintza y data-balioa para leerlos luego desde JS -->
+                <button class="btn btn-garbitu" data-ekintza="garbitu">C</button>
+                <button class="btn btn-eragiketa" data-ekintza="eragiketa" data-balioa="/">/</button>
+                
+                <button class="btn" data-ekintza="zenbakia" data-balioa="7">7</button>
+                <button class="btn" data-ekintza="zenbakia" data-balioa="8">8</button>
+                <button class="btn" data-ekintza="zenbakia" data-balioa="9">9</button>
+                <button class="btn btn-eragiketa" data-ekintza="eragiketa" data-balioa="*">x</button>
+                
+                <button class="btn" data-ekintza="zenbakia" data-balioa="4">4</button>
+                <button class="btn" data-ekintza="zenbakia" data-balioa="5">5</button>
+                <button class="btn" data-ekintza="zenbakia" data-balioa="6">6</button>
+                <button class="btn btn-eragiketa" data-ekintza="eragiketa" data-balioa="-">-</button>
+                
+                <button class="btn" data-ekintza="zenbakia" data-balioa="1">1</button>
+                <button class="btn" data-ekintza="zenbakia" data-balioa="2">2</button>
+                <button class="btn" data-ekintza="zenbakia" data-balioa="3">3</button>
+                <button class="btn btn-eragiketa" data-ekintza="eragiketa" data-balioa="+">+</button>
+                
+                <button class="btn btn-zero" data-ekintza="zenbakia" data-balioa="0">0</button>
+                <button class="btn" data-ekintza="zenbakia" data-balioa=".">.</button>
+                <button class="btn btn-berdin" data-ekintza="kalkulatu">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
