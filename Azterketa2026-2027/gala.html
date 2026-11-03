@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gala Drag Txurdi</title>
+  <link rel="stylesheet" href="gala.css">
+  <script src="galaEder.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Gala Drag Txurdi</h1>
+    <p class="subtitulo">Inscripción de concursantes</p>
+    <button type="button" id="btnSaludo">Saludar</button>
+  </header>
+
+  <main>
+
+    <!-- INSCRIPCIÓN -->
+    <section class="panel">
+      <h2>Inscríbete</h2>
+
+      <form id="formInscripcion" novalidate>
+        <label for="nombre">Nombre artístico</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Miss Vanilla">
+
+        <label for="lema">Lema</label>
+        <input type="text" id="lema" name="lema" placeholder="Dulce por fuera, letal por dentro">
+
+        <label for="categoria">Categoría</label>
+        <select id="categoria" name="categoria">
+          <option value="">-- Elige una categoría --</option>
+          <option value="comedia">Comedia</option>
+          <option value="glamour">Glamour</option>
+          <option value="alternativa">Alternativa</option>
+        </select>
+
+        <button type="submit" id="btnInscribir">Inscribir</button>
+      </form>
+
+      <p id="ayuda"></p>
+      <div id="errores"></div>
+    </section>
+
+    <!-- CONCURSANTES -->
+    <section class="panel">
+      <h2>Concursantes</h2>
+      <ul id="listaConcursantes"></ul>
+      <p id="ultimaInscrita"></p>
+    </section>
+
+  </main>
+
+ 
+</body>
+</html>
