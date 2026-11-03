@@ -20,6 +20,12 @@ const mayusculas = () => {
     });
 };
 
+/*a) Erakutsi tituluak letra larriz kontsolan. Map erabiliz
+const mayusculasMap = () => {
+    const titulosMayusculas = peliculas.map(pelicula => pelicula.titulo.toUpperCase());
+    console.log(titulosMayusculas);
+}*/
+
 // b) Itzuli array berri bat soilik adierazitako kategoriako filmekin.
 const peliculasPorCategoria = (categoria) => {
     return peliculas.filter(pelicula => pelicula.categoria === categoria);

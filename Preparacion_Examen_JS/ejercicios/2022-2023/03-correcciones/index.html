@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Formulario </title>
+    <link rel="stylesheet" href="formulario.css">
+    <script src="functions.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" class="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" id="nombre" required>
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="Escribe tu email" id="email" required>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" placeholder="Escribe tu edad" id="edad" required>
+            <input type="submit" id="validar" value="Validar" />
+            <p id="formError" class="textError"></p>
+
+            <div class="informacion">
+                <label for="actividad" id="test">Solicitar Información:</label>
+                <select name="actividad" id="actividad">
+                    <option value="0">Selecciona las actividades:</option>
+                    <option value="1">familiares</option>
+                    <option value="2">deportivas</option>
+                    <option value="3">riesgo</option>
+                </select>
+                <div>
+                    <p id="info"></p>
+                    <p id="errorAct" class="textError"></p>
+                </div>
+                <input type="button" value="Restaurar" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contenedor</title>
+    <script src="array.js"></script>
+    <script src="descarga.js"></script>
+    <script src="pintar.js"></script>
+    <script src="validar.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Formulario de descargas</h1>
+
+    <label for="envases">Envases:</label>
+    <input type="text" id="envases" name="envases" value="0" disabled>
+    <label for="vidrio">Vidrio:</label>
+    <input type="text" id="vidrio" name="vidrio" value="0" disabled>
+    <label for="papel">Papel y cartón:</label>
+    <input type="text" id="papel" name="papel" value="0" disabled>
+    <label for="aceite">Aceite:</label>
+    <input type="text" id="aceite" name="aceite" value="0" disabled>
+    <label for="organico">Organico:</label>
+    <input type="text" id="organico" name="organico" value="0" disabled>
+    <br /><br />
+    <form id="contenedor-form">
+        <label for="residuo">Contenedor:</label>
+        <select id="residuo" name="residuo">
+            <option value="amarillo">Envases</option>
+            <option value="verde">Vidrio</option>
+            <option value="azul">Papel</option>
+            <option value="marron">Organico</option>
+            <option value="naranja">Aceite</option>
+        </select>
+        <br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="kg">Kg:</label>
+        <input type="text" id="kg" name="kg">
+
+        <br>
+        <label></label>
+        <input type="submit" id="anadir" value="Añadir descarga" />
+    </form>
+    <div id="contenedor-descargas">
+        <h2>Descargas</h2>
+        <div id="descargas"></div>
+    </div>
+</body>
+
+</html>

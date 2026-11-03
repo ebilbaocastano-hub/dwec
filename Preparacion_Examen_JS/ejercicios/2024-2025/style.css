@@ -1,0 +1,126 @@
+/* style.css */
+
+/* Orokorra */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+main {
+    margin: 50px;
+}
+/* style.css */
+
+/* ... gainontzeko estiloak ... */
+
+nav {
+    background: #00c598; /* Menuaren atzeko kolorea */
+    color: #fff; /* Letra kolorea zuria */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Testua zentroan lerrokatzea */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    color: #2be0b7; /* Letra kolorea zuria */
+}
+
+nav ul li a {
+    color: #2be0b7; /* Letra kolorea zuria */
+    text-decoration: none;
+    padding: 10px 15px; /* Botoiaren barruko espazioa */
+    border-radius: 5px; /* Botoiaren ertzak biribildu */
+    transition: background-color 0.3s; /* Transizioa efektua */
+}
+
+nav ul li:hover {
+    background-color: #009eff; /* Hover efektua */
+    color: #fff; /* Hoverrean letra kolorea zuria mantentzea */
+}
+
+/* ... gainontzeko estiloak ... */
+
+h1 {
+    color: #009eff; /* Kolore berdea */
+}
+
+h2 {
+    color: #00c598; /* Kolore urdina */
+}
+
+h3 {
+    color: #12b3ab; /* Kolore turkesa */
+}
+
+/* Formularioa */
+form {
+    width: 60%; 
+    align-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="number"],
+form select,
+form input[type="file"] {
+    width: calc(60% - 22px); /* Betetzeko espazio eta muga kontuan hartu */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #12b3ab; /* Kolore paletakoa */
+    border-radius: 4px;
+    box-sizing: border-box; /* Kaxa tamainaren kudeaketa */
+}
+
+/* Botoiak */
+form button {
+    background: #2be0b7; /* Paletako kolore bat */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 30%; /* Botoia zabalera osoa */
+}
+
+form button:hover {
+    background: #009eff; /* Paletako kolore bat */
+}
+
+/* Lista */
+ul {
+    padding: 0;
+}
+
+ul li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #00c598; /* Paletako kolore bat */
+    color: #fff;
+}

@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+/* Estilo general para los label e input antes del formulario */
+label, input {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    vertical-align: top; /* Alinea los elementos en la parte superior */
+}
+
+/* Estilo para los label */
+label {
+    font-weight: bold;
+    color: #333;
+    width: 20%; /* Ancho del label */
+    text-align: right;
+}
+
+/* Estilo para los input */
+input {
+    width: 70%; /* Ancho del input */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilo para el contenedor de los label e input antes del formulario */
+#contenedor-form {
+    margin-bottom: 20px;
+}
+#contenedor-descargas {
+    margin-left: 20%;
+}
+
+p.envases {
+    background-color: rgb(246, 246, 174);
+}
+
+p.vidrio {
+    background-color: rgb(167, 246, 167);
+}
+
+p.papel {
+    background-color: rgb(158, 158, 233);
+}
+
+p.organico {
+    background-color: rgb(201, 136, 136);
+}
+
+p.aceite {
+    background-color: rgb(230, 204, 155);
+}
+
+p {
+    padding: 10px;
+    font-size: 16pt;
+}

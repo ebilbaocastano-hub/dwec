@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eu">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bidaia Sortu</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/Bidaia.js"></script>
+    <script src="js/sortuBidaia.js"></script>
+    <script src="js/balidazioa.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="bidaiak_zerrenda.html">Gure bidaiak</a></li>
+        <li><a href="bidaia_sortu.html">Bidaia sortu</a></li>
+        <li id="buttonSaioa">Saioa Hasi</li>
+    </ul>
+    </nav>
+    <main>
+      <h1>Bidaia Berria Sortu</h1>
+
+      <form
+        action="bidaia_sortu.php"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <label>Titulua / Título:</label><br />
+        <input type="text" name="title" id="title" required /><br />
+
+        <label>Helmuga / Destino:</label><br />
+        <input type="text" name="destination" id="destination" required /><br />
+
+        <label>Prezioa / Precio:</label><br />
+        <input type="number" name="price" id="price" required /><br />
+
+        <label>Data / Fecha:</label><br />
+        <input type="date" name="date" id="date" required /><br />
+
+        <label>Deskripzioa / Descripción:</label><br />
+        <input type="text" name="description" id="description" required /><br />
+
+        <label>Kategoria / Categoría:</label><br />
+        <select name="category_id" id="category_id" required>
+          <option value=""></option>
+          <option value="1">Abentura / Aventura</option>
+          <option value="2">Kulturala / Cultural</option>
+          <option value="3">Familia / Familiar</option>
+          <option value="4">Hondartza / Playa</option>
+          <option value="5">Mendia / Montaña</option>
+          <option value="6">Exotikoa / Exótico</option>
+          <option value="7">Gastronomikoa / Gastronómico</option>
+          <option value="8">Erromantikoa / Romántico</option></select
+        ><br />
+
+        <button id="sortu">Bidaia Sortu / Crear viaje</button>
+      </form>
+      <div id="mensaje"></div>
+    </main>
+    <footer>
+      <p>Jone Martinez, Laura Folgado y José Manuel Insausti</p>
+      <p>Txurdi - Agentzia Bidaiak</p>
+    </footer>
+  </body>
+</html>

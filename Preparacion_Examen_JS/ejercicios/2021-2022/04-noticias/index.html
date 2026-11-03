@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><title>2021 · Noticias con DOM</title>
+<script src="script.js" defer></script>
+<style>.ane{background:#fff0c2}.jon{background:#d7f4dd}.irati{background:#dfeaff} article{padding:1em;margin:1em 0} h2{font-weight:bold}</style>
+</head><body><h1>Periódico</h1>
+<form id="formNoticias" novalidate>
+<p><label>Título: <input id="titulo" type="text"></label></p>
+<p><label>Noticia: <textarea id="texto"></textarea></label></p>
+<p><label>Periodista: <select id="periodista"><option value="ane">Ane</option><option value="jon">Jon</option><option value="irati">Irati</option></select></label></p>
+<p><label>URL: <input id="url" type="url" placeholder="https://ejemplo.com"></label></p>
+<button type="submit">Publicar</button></form>
+<p id="error" role="status"></p><div id="noticias"></div>
+</body></html>

@@ -1,0 +1,50 @@
+body{padding:100px;}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:100%;
+    max-width:300px;
+    padding:10px;
+    border:1px solid #000;
+    border-radius:10px;
+    margin:auto;
+    background-color:#A9CEF4;
+}
+
+.formulario label{
+    display:block;
+    font-weight:bold;
+}
+
+.formulario input,.formulario select,.formulario textarea{
+    padding:5px;
+    width:100%;
+    margin:16px 0;
+}
+
+.formulario textarea{
+    resize:none;
+    height:120px;
+}
+
+#cursoInput{
+    border:2px solid #ff0000;
+    display:none;
+}
+
+#cursoLabel{
+    display:none;
+}
+.informacion{
+    display:inline-block
+}
+
+.textError{
+    color:#ff0000;
+    font-weight: bold;
+}
